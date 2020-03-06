@@ -7,12 +7,18 @@ m3u8 文件实质是一个播放列表（playlist），其可能是一个媒体�
 > :param url_m3u8:m3u8视频链接  
 > :param name:视频文件保存名称  
 > :param path:视频文件保存地址（地址不存在会自动创建）  
-## 一. 多进程下载M3U8视频
+## 多进程下载M3U8视频
 M3U8_prosess.py  
 内存占用较大，下载较稳定  
-## 二. 多线程下载M3U8视频
+## 多线程下载M3U8视频
 M3U8_threads.py  
 内存占用较小，cpu占用较大  
 
+----------
+## 视频下载
+**movies_download.py**  
+可以获取最新电影电视剧的M3U8视频下载链接。  
+可在此模块中直接搜索电影名称，获取视频连接后自动下载。  
+下载地址可在Mvs类中self.path属性指定下载地址  
 ----------
 *联系方式：handsomemars@outlook.com*
